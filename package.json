@@ -1,0 +1,27 @@
+{
+  "name": "technical-documentation",
+  "author": "Federico Moretti <hello@federicomoretti.it> (https://federicomoretti.it/)",
+  "bugs": "https://github.com/fedtti/technical-documentation/issues",
+  "homepage": "",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [],
+  "description": "Technical Documentation • freeCodeCamp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fedtti/technical-documentation.git"
+  },
+  "main": "gulpfile.js",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "engines": {
+    "node": "^10.15.3"
+  }
+}
