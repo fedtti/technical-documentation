@@ -11,23 +11,66 @@
 
   /* Sidebar */
   &__sidebar {
-    padding: 1rem;
+      background: #e6e8ea;
+
+    &__navbar {
+
+    }
 
     /* Header */
     &__head {
+      background-image: linear-gradient(#1e415e 10%, #2b5b84 90%);
+      border-bottom: 0.0625rem solid #444;
+      border-top: 0.0625rem solid #191919;
       margin: 0 auto;
+      padding: 1rem;
       text-align: center;
     }
 
     &__title {
-      background: url("/img/python.png") no-repeat center center;
-      height: 4.375rem;
-      margin: 0;
+      background: url("/img/python.png") center center no-repeat;
+      height: 3.688rem;
+      margin: 0 auto;
       width: 15rem;
     }
   }
 }
 
-.-invisible {
+/**
+ *
+ */
+.-hide {
   visibility: hidden;
+}
+
+/**
+ *
+ */
+@media (min-width: 576px) {
+  .site {
+    /* Sidebar */
+    &__sidebar {
+      border-right: 0.0625rem solid #d8dbde;
+      height: 100vh;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 50%;
+
+      /* Header */
+      &__head {
+        border-right: 0.0625rem solid #444;
+        margin-right: -0.0625rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .site {
+    /* Sidebar */
+    &__sidebar {
+      width: 25%;
+    }
+  }
 }
